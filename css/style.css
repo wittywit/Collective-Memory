@@ -6,7 +6,7 @@ canvas { margin:0; padding:0;
   height: 100%;
   width: 100%;
   z-index:1;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   background:-o-linear-gradient(top, #000, #257eb7);
@@ -26,10 +26,11 @@ font-size:85%;
 font-family:tahoma;
 color:#fff;
 width:250px;
+height:auto;
 float:left;
 position:absolute;
 z-index:2;
 margin:5px;
-background-color:rgba(255, 255, 255, 1);
+background-color:rgba(255, 255, 255, 0.5);
 
 }
