@@ -94,3 +94,19 @@ function Circle() {
 	this.getX = function() { return this.x; }
 	this.getY = function() { return this.y; }
 }
+
+/*
+       * define the runAnimation boolean as an obect
+       * so that it can be modified by reference
+       */
+      var runAnimation = {
+        value: true
+      };
+
+      // add click listener to canvas
+      document.getElementById('canvas').addEventListener('click', function() {
+        // flip flag
+        runAnimation.value = !runAnimation.value;
+
+        
+      });
