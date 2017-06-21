@@ -18,7 +18,7 @@ $(document).ready(function(){
 		fire[i].reset();
 	}
 	setInterval(draw,rint);
-	setInterval(draw,rint2);
+	//setInterval(draw,rint2);
 
 });
 
