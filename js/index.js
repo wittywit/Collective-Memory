@@ -24,10 +24,26 @@ $(document).ready(function(){
 
 function draw() {
 	con.clearRect(0,0,WIDTH,HEIGHT);
-	for(var i = 0; i < fire.length; i++) {
+	if(runAnimation.value){
+		for(var i = 0; i < fire.length; i++) {
 		fire[i].fade();
 		fire[i].move();
 		fire[i].draw();
+		}  // for statement finish
+	}  // if statement finish
+
+
+	else if (!runAnimation.value){
+		for(var i = 0; i < fire.length; i++)
+		 {
+		   fire[i].fade();
+		   //fire[i].move();
+		   fire[i].draw();
+		   console.log(fire[i].x);
+
+		 } 
+
+		
 	}
 }
 
